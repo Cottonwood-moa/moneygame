@@ -60,15 +60,15 @@ let content = {
 
 let result = {
     "elec": { "participant": "논리왕 전기", "explain": '"재밌었어, 인정?"', "img": "/assets/img/elec.png" },
-    "pie": { "participant": "파이", "explain": " 존나 노잼 오케이", "img": "/assets/img/pie.webp" },
-    "gong": { "participant": "공혁준", "explain": "재밌긴 했어.<br> 우리 없었으면 개씹노잼일거야.", "img": "/assets/img/gong.png" },
-    "e": { "participant": "이루리", "explain": "우리를 위해 뭘 하셨냐고요.", "img": "/assets/img/e.jpg" },
-    "cow": { "participant": "가오가이", "explain": "누군가를 믿잖아? 끝까지 믿어야 돼. 근데 누군가를 의심하잖아? 끝까지 의심해야 돼.", "img": "/assets/img/cow.jpg" },
+    "pie": { "participant": "파이", "explain": '"존나 노잼 오케이"', "img": "/assets/img/pie.webp" },
+    "gong": { "participant": "공혁준", "explain": '"재밌긴 했어.<br> 우리 없었으면 개씹노잼일거야."', "img": "/assets/img/gong.png" },
+    "e": { "participant": "이루리", "explain": '"우리를 위해 뭘 하셨냐고요."', "img": "/assets/img/e.jpg" },
+    "cow": { "participant": "가오가이", "explain": '"누군가를 믿잖아? 끝까지 믿어야 돼. 근데 누군가를 의심하잖아? 끝까지 의심해야 돼."', "img": "/assets/img/cow.jpg" },
     "tiger": { "participant": "산범", "explain": "덩실덩실~", "img": "/assets/img/tiger.png" },
-    "big": { "participant": "빅현배", "explain": " 설명", "img": "/assets/img/big.webp" },
-    "ni": { "participant": "니갸르", "explain": " 설명", "img": "/assets/img/ni.png" },
-    "park": { "participant": "박준형", "explain": " 설명", "img": "/assets/img/park.jpg" },
-    "six": { "participant": "육지담", "explain": " 설명", "img": "/assets/img/six.jpg" },
+    "big": { "participant": "빅현배", "explain": '"N빵이요? 흠.. 첨들어보는데..일단 3KG만 주십쇼."', "img": "/assets/img/big.webp" },
+    "ni": { "participant": "니갸르", "explain": '"본인이 약하다는 말을 했잖아. 그러면 우리가 그걸 이용하는 거야."', "img": "/assets/img/ni.png" },
+    "park": { "participant": "박준형", "explain": '"특 스페셜 모둠 초밥으로 주세요."', "img": "/assets/img/park.jpg" },
+    "six": { "participant": "육지담", "explain": '"언니 저 무서워요."', "img": "/assets/img/six.jpg" },
     "retry": { "participant": "다시시도", "explain": "답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
 
 }
@@ -76,7 +76,7 @@ let result = {
 
 function next() {
 
-    if (num === 1) {
+    if (num === 20) {
         $(".question").hide();
         $(".result").show();
         var info = [

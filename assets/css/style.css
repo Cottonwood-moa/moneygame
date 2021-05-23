@@ -138,6 +138,7 @@ button[disabled]{
 }
 
 #participant{
+  font-weight: bold;
     animation: fadeinDelay 2s;
 }
 #restart{
