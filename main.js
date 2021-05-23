@@ -9,17 +9,17 @@ $("#A").click(function () {
     const preValue = $("#" + typeA).val();
     $("#" + typeA).val(parseInt(preValue) + 1);
     next();
-});
-//중간버튼
+}); 
 
+//중간버튼
 $("#B").click(function () {
     let typeB = $("#typeB").val();
     const preValue = $("#" + typeB).val();
     $("#" + typeB).val(parseInt(preValue) + 1);
     next();
-});
-//아래버튼
+}); 
 
+//아래버튼
 $("#C").click(function () {
     let typeC = $("#typeC").val();
     const preValue = $("#" + typeC).val();
@@ -73,52 +73,53 @@ function next() {
     if (num === 20) {
         $(".question").hide();
         $(".result").show();
-        var  info = [
-            { name : $("#elec").attr('id'), value : $("#elec").val()},
-            { name : $("#pie").attr('id'), value : $("#pie").val()},
-            { name : $("#gong").attr('id'), value : $("#gong").val()},
-            { name : $("#e").attr('id'), value : $("#e").val()},
-            { name : $("#cow").attr('id'), value : $("#cow").val()},
-            { name : $("#tiger").attr('id'), value : $("#tiger").val()},
-            { name : $("#big").attr('id'), value : $("#big").val()},
-            { name : $("#ni").attr('id'), value : $("#ni").val()},
-            { name : $("#park").attr('id'), value : $("#park").val()},
-            { name : $("#six").attr('id'), value : $("#six").val()},
-            { name : $("#retry").attr('id'), value : $("#retry").val()},
+        var info = [
+            { name: $("#elec").attr('id'), value: $("#elec").val() },
+            { name: $("#pie").attr('id'), value: $("#pie").val() },
+            { name: $("#gong").attr('id'), value: $("#gong").val() },
+            { name: $("#e").attr('id'), value: $("#e").val() },
+            { name: $("#cow").attr('id'), value: $("#cow").val() },
+            { name: $("#tiger").attr('id'), value: $("#tiger").val() },
+            { name: $("#big").attr('id'), value: $("#big").val() },
+            { name: $("#ni").attr('id'), value: $("#ni").val() },
+            { name: $("#park").attr('id'), value: $("#park").val() },
+            { name: $("#six").attr('id'), value: $("#six").val() },
+            { name: $("#retry").attr('id'), value: $("#retry").val() },
 
         ]
         var sortingField = "value";
-        info.sort(function(a, b) { 
+        info.sort(function (a, b) {
             return b[sortingField] - a[sortingField];
         });
         console.log(info);
-        console.log(info[0]['value']);  var a = info[0]['value'];
-        console.log(info[1]['value']);  var b = info[1]['value'];
-        console.log(info[2]['value']);  var c = info[2]['value'];
-        console.log(info[3]['value']);  var d = info[3]['value'];
-        if(a==b && a==c && a==d){
+        console.log(info[0]['value']); var a = info[0]['value'];
+        
+        console.log(info[1]['value']); var b = info[1]['value'];
+        console.log(info[2]['value']); var c = info[2]['value'];
+        console.log(info[3]['value']); var d = info[3]['value'];
+        if (a == b && a == c && a == d) {
             console.log('hello');
-            const last =  info[10]['name'];
+            const last = info[10]['name'];
             $("#img").attr("src", result[last]["img"]);
             $("#participant").html(result[last]["participant"]);
             $("#explain").html(result[last]["explain"]);
-            
-        }else{
+
+        } else {
             console.log(info[0]['value']);
-        const first =  info[0]['name'];
-        $("#img").attr("src", result[first]["img"]);
-        $("#participant").html(result[first]["participant"]);
-        $("#explain").html(result[first]["explain"]);
+            const first = info[0]['name'];
+            $("#img").attr("src", result[first]["img"]);
+            $("#participant").html(result[first]["participant"]);
+            $("#explain").html(result[first]["explain"]);
         }
 
     } else {
-        $('#A').attr("disabled",true);
-        setTimeout(function(){$('#A').removeAttr("disabled"); }, 4000);
-        $('#B').attr("disabled",true);
-        setTimeout(function(){$('#B').removeAttr("disabled"); }, 4000);
-        $('#C').attr("disabled",true);
-        setTimeout(function(){$('#C').removeAttr("disabled"); }, 4000);
-        
+        $('#A').attr("disabled", true);
+        setTimeout(function () { $('#A').removeAttr("disabled"); }, 4000);
+        $('#B').attr("disabled", true);
+        setTimeout(function () { $('#B').removeAttr("disabled"); }, 4000);
+        $('#C').attr("disabled", true);
+        setTimeout(function () { $('#C').removeAttr("disabled"); }, 4000);
+
         $(".progress-bar").attr('style', 'width: calc(100/20*' + num + '%)');
         $("#title").html(q[num]["title"]);
         $("#typeA").val(q[num]["typeA"]);
@@ -134,19 +135,19 @@ function next() {
 
 }
 // css restart
-$("button").click(function(e) {
+$("button").click(function (e) {
     $("#A").removeClass("fadeInA");
-    setTimeout(function() {
+    setTimeout(function () {
         $("#A").addClass("fadeInA");
     }, 0);
     $("#B").removeClass("fadeInB");
-    setTimeout(function() {
+    setTimeout(function () {
         $("#B").addClass("fadeInB");
     }, 0);
     $("#C").removeClass("fadeInC");
-    setTimeout(function() {
+    setTimeout(function () {
         $("#C").addClass("fadeInC");
     }, 0);
-  });
+});
 
 
