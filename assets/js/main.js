@@ -53,17 +53,17 @@ let q = {
 
 }
 let result = {
-    "elec": { "participant": "논리왕 전기", "explain": " 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 <br>무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "pie": { "participant": "파이", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "gong": { "participant": "공혁준", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "e": { "participant": "이루리", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "cow": { "participant": "가오가이", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "tiger": { "participant": "산범", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "big": { "participant": "빅현배", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "ni": { "participant": "니갸르", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "park": { "participant": "박준형", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "six": { "participant": "이루리", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
-    "retry": { "participant": "다시하세요", "explain": "답변에 일관성이 없다고 판단되었습니다. 다시해보세요!", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" }
+    "elec": { "participant": "논리왕 전기", "explain": " 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 <br>무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.", "img": "/assets/img/elec.png" },
+    "pie": { "participant": "파이", "explain": " 설명", "img": "/assets/img/pie.webp" },
+    "gong": { "participant": "공혁준", "explain": " 설명", "img": "/assets/img/gong.png" },
+    "e": { "participant": "이루리", "explain": " 설명", "img": "/assets/img/e.jpg" },
+    "cow": { "participant": "가오가이", "explain": " 설명", "img": "/assets/img/cow.jpg" },
+    "tiger": { "participant": "산범", "explain": " 설명", "img": "/assets/img/tiger.png" },
+    "big": { "participant": "빅현배", "explain": " 설명", "img": "/assets/img/big.webp" },
+    "ni": { "participant": "니갸르", "explain": " 설명", "img": "/assets/img/ni.png" },
+    "park": { "participant": "박준형", "explain": " 설명", "img": "/assets/img/park.jpg" },
+    "six": { "participant": "육지담", "explain": " 설명", "img": "/assets/img/six.jpg" },
+    "retry": { "participant": "다시하세요", "explain": "답변에 일관성이 없다고 판단되었습니다. 다시해보세요!", "img": "/assets/img/retry.jpg" }
 
 }
 

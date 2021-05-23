@@ -133,6 +133,9 @@ button[disabled]{
 #participant{
     animation: fadeinDelay 2s;
 }
+#restart{
+    animation: fadeinDelay 3s;
+}
 
 /* Cool infinite background scrolling animation.
  * Twitter: @kootoopas
