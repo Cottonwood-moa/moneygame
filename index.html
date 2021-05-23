@@ -21,6 +21,8 @@
     <div class="header"></div>
     <!-- start content -->
     <article class="start">
+        <div class="mt-5 mb-5"></div>
+
         <h1 class="mt-5 mb-5 text-center">머니게임 테스트</h1>
         <button type="button" class="startBtn mt-5 mb-5" onclick="start();" >시작하기</button>
           <!-- addthis -->
@@ -40,7 +42,7 @@
         <div class="progress mt-5">
             <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: calc(100/20*1%)"></div>
         </div>
-        <h2 id="title" class="fadeIn text-center mt-5">문제</h2>
+        <h4 id="title" class="fadeIn text-center mt-5">문제</h4>
 
         <input id="typeA" type="hidden" value="elec">
         <input id="typeB" type="hidden" value="pie">
@@ -49,15 +51,17 @@
         <article id="questionBtn">
             <button id="A" type="button" class="fadeInA disable mt-5">질문</button>
             <button id="B" type="button" class="fadeInB disable mt-5">질문</button>
-            <button id="C" type="button" class="fadeInC disable  mt-5">질문</button>
+            <button id="C" type="button" class="fadeInC disable mt-5">질문</button>
+            <button id="D" type="button" class="fadeInD disable mt-5">해당없음</button>
         </article>
     </article>
 
     <!-- result content -->
     <article class="result">
         <img id="img" class="rounded-circle mt-5" src="KakaoTalk_20210505_192824341.jpg" alt="">
+        <h3 id="yourResult" class="mt-5">당신의 성향은</h3>
         <h2 id="participant" class="text-center mt-5">참가자 이름</h2>
-        <h4 id="explain" class="text-center mt-5 mb-5">설명</h4>
+        <h3 id="explain" class="text-center mt-5 mb-5">설명</h3>
         
             <button type="button" id="restart" onclick="refreshPage()" class="remove-image"> 다시하기 </button>
             
@@ -76,7 +80,7 @@
 
 
     <!-- point -->
-    <input type="hidden" id="elec" value="0">
+    <input type="hidden" id="elec" value="2">
     <input type="hidden" id="pie" value="0">
     <input type="hidden" id="gong" value="0">
     <input type="hidden" id="e" value="0">

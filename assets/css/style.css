@@ -59,17 +59,20 @@ article{
 }
 
 .fadeIn {
-    animation: fadein 1.5s;
+    animation: fadein 1s;
 }
 
 .fadeInA{
-    animation: 1.5s fadeinDelay;
+    animation: 1.0s fadeinDelay;
 }
 .fadeInB{
-    animation: 2.5s fadeinDelay;
+    animation: 2.0s fadeinDelay;
 }
 .fadeInC{
-    animation: 3.5s fadeinDelay;
+    animation: 3.0s fadeinDelay;
+}
+.fadeInD{
+  animation: 4.0s fadeinDelay;
 }
 /* opacity 불투명도 */
 @keyframes fadein {
@@ -130,6 +133,10 @@ button[disabled]{
 #explain{
     animation: fadeinDelay 2.5s;
 }
+#yourResult{
+  animation: fadeinDelay 1.5s;
+}
+
 #participant{
     animation: fadeinDelay 2s;
 }
