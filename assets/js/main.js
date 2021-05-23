@@ -63,7 +63,7 @@ let result = {
     "ni": { "participant": "니갸르", "explain": " 설명", "img": "/assets/img/ni.png" },
     "park": { "participant": "박준형", "explain": " 설명", "img": "/assets/img/park.jpg" },
     "six": { "participant": "육지담", "explain": " 설명", "img": "/assets/img/six.jpg" },
-    "retry": { "participant": "다시하세요", "explain": "답변에 일관성이 없다고 판단되었습니다. 다시해보세요!", "img": "/assets/img/retry.jpg" }
+    "retry": { "participant": "다시하세요", "explain": "답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
 
 }
 
@@ -162,5 +162,21 @@ function refreshPage(){
     window.location.reload();
 
 }
+// function capture(){
+//     html2canvas(document.querySelector('img'), {}).then(function (canvas) {
+//         saveAs(canvas.toDataURL(), 'moneygame.png');
+//     });    
+// }
 
-
+// function saveAs(uri, filename) {
+// 	var link = document.createElement('a');
+// 	if (typeof link.download === 'string') {
+// 		link.href = uri;
+// 		link.download = filename;
+// 		document.body.appendChild(link);
+// 		link.click();
+// 		document.body.removeChild(link);
+// 	} else {
+// 		window.open(uri);
+// 	}
+// }
