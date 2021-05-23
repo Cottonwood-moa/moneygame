@@ -113,37 +113,45 @@ function next() {
         }
 
     } else {
-        $('#A').attr("disabled", true);
-        setTimeout(function () { $('#A').removeAttr("disabled"); }, 4000);
-        $('#B').attr("disabled", true);
-        setTimeout(function () { $('#B').removeAttr("disabled"); }, 4000);
-        $('#C').attr("disabled", true);
-        setTimeout(function () { $('#C').removeAttr("disabled"); }, 4000);
-
+        setTimeout(function(){console.log("timedelay")},4000);
+        $('.disable').attr("disabled", true);
+        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 4500);
+  
         $(".progress-bar").attr('style', 'width: calc(100/20*' + num + '%)');
         $("#title").html(q[num]["title"]);
         $("#typeA").val(q[num]["typeA"]);
         $("#typeB").val(q[num]["typeB"]);
         $("#typeC").val(q[num]["typeC"]);
         //질문지 변경
+        if(num ===1){
         $("#A").html(q[num]["A"]);
         $("#B").html(q[num]["B"]);
         $("#C").html(q[num]["C"]);
-
+        } else
+        setTimeout(function(){$("#A").html(q[num]["A"]);},500);
+        setTimeout(function(){$("#B").html(q[num]["B"]);},500);
+        setTimeout(function(){$("#C").html(q[num]["C"]);},500);
         num = num + 1;
     }
 
 }
 // css restart
 $("button").click(function (e) {
+    $("#title").removeClass("fadeIn");
+    setTimeout(function () {
+        $("#title").addClass("fadeIn");
+    }, 0);
+
     $("#A").removeClass("fadeInA");
     setTimeout(function () {
         $("#A").addClass("fadeInA");
     }, 0);
+
     $("#B").removeClass("fadeInB");
     setTimeout(function () {
         $("#B").addClass("fadeInB");
     }, 0);
+    
     $("#C").removeClass("fadeInC");
     setTimeout(function () {
         $("#C").addClass("fadeInC");

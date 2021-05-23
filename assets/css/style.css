@@ -1,0 +1,160 @@
+body{
+    background-color: black;
+    background-size:cover;
+    font-family: 'Gamja Flower', cursive;
+    text-align: center;
+    /* img size is 50x50 */
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 0.92s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+  body::before {
+    font-size: 8rem;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+button { border:none; } 
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+.question{
+    display: none;
+}
+.result{
+    display: none;
+}
+#img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+#barChart{
+    display: none;
+}
+
+.fadeIn {
+    animation: fadein 3s;
+}
+
+.fadeInA{
+    animation: 3s fadeinDelay;
+}
+.fadeInB{
+    animation: 4s fadeinDelay;
+}
+.fadeInC{
+    animation: 5s fadeinDelay;
+}
+/* opacity 불투명도 */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes fadeinDelay{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* all: unset; */
+/* button style */
+button{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+button:focus {
+    outline: none;
+  }
+
+button:disabled,
+button[disabled]{
+    border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+  color: black;
+}
+
+.startBtn{
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    /* 요소 중앙정렬 */
+    margin: 0 auto; 
+}
+
+.progress-bar{
+    height: 3px;
+}
+.progress {
+    height: 3px;
+}
+#id{
+    font-weight: bold;
+}
+
+
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
