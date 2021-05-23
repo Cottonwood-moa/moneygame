@@ -35,9 +35,10 @@ article{
 .result{
     display: none;
 }
-#img{
-    width: 300px;
-    height: 300px;
+#img{ 
+    animation: fadeinDelay 1s;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
 }
 #barChart{
@@ -92,23 +93,33 @@ button[disabled]{
 }
 
 .startBtn{
-    font-weight: bold;
     font-size: 25px;
     width: 100px;
     /* 요소 중앙정렬 */
     margin: 0 auto; 
 }
+#restart{
+    animation: fadein 3s;
+    font-size: 25px;
+    width: 100px;
+    margin: 0 auto; 
+}
 
 .progress-bar{
-    height: 3px;
+    height: 6px;
 }
 .progress {
-    height: 3px;
+    height: 6px;
 }
 #id{
     font-weight: bold;
 }
-
+#explain{
+    animation: fadeinDelay 2.5s;
+}
+#participant{
+    animation: fadeinDelay 2s;
+}
 
 /* Cool infinite background scrolling animation.
  * Twitter: @kootoopas
@@ -158,3 +169,37 @@ button[disabled]{
   }
 }
 /* Main styles */
+
+
+#footer {
+    padding: 2em 0 1em 0;
+    background: #ffffff;
+    }
+    
+    #footer .copyright {
+      color: #000000;
+      font-size: 0.9em;
+      margin: 0 0 2em 0;
+      padding: 0 1em;
+      text-align: center;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: black;
+      }
+      
+      a:visited {
+        text-decoration: none;
+        color: black;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: black;
+      }
+      
+      a:active {
+        text-decoration: none;
+        color: black;
+      }

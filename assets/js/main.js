@@ -53,24 +53,24 @@ let q = {
 
 }
 let result = {
-    "elec": { "participant": "elec", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "pie": { "participant": "pie", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "gong": { "participant": "gong", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "e": { "participant": "e", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "cow": { "participant": "cow", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "tiger": { "participant": "tiger", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "big": { "participant": "big", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "ni": { "participant": "ni", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "park": { "participant": "park", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "six": { "participant": "six", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" },
-    "retry": { "participant": "retry", "explain": " 설명", "img": "KakaoTalk_20210505_192824341.jpg" }
+    "elec": { "participant": "논리왕 전기", "explain": " 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 <br>무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "pie": { "participant": "파이", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "gong": { "participant": "공혁준", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "e": { "participant": "이루리", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "cow": { "participant": "가오가이", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "tiger": { "participant": "산범", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "big": { "participant": "빅현배", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "ni": { "participant": "니갸르", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "park": { "participant": "박준형", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "six": { "participant": "이루리", "explain": " 설명", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" },
+    "retry": { "participant": "다시하세요", "explain": "답변에 일관성이 없다고 판단되었습니다. 다시해보세요!", "img": "/assets/img/KakaoTalk_20210505_192824341.jpg" }
 
 }
 
 
 function next() {
 
-    if (num === 20) {
+    if (num === 2) {
         $(".question").hide();
         $(".result").show();
         var info = [
@@ -157,5 +157,10 @@ $("button").click(function (e) {
         $("#C").addClass("fadeInC");
     }, 0);
 });
+
+function refreshPage(){
+    window.location.reload();
+
+}
 
 
