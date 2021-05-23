@@ -70,7 +70,7 @@ let result = {
 
 function next() {
 
-    if (num === 2) {
+    if (num === 20) {
         $(".question").hide();
         $(".result").show();
         var info = [
@@ -113,9 +113,9 @@ function next() {
         }
 
     } else {
-        setTimeout(function(){console.log("timedelay")},4000);
+        setTimeout(function(){console.log("timedelay")},3000);
         $('.disable').attr("disabled", true);
-        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 4500);
+        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 3500);
   
         $(".progress-bar").attr('style', 'width: calc(100/20*' + num + '%)');
         $("#title").html(q[num]["title"]);

@@ -59,17 +59,17 @@ article{
 }
 
 .fadeIn {
-    animation: fadein 3s;
+    animation: fadein 1.5s;
 }
 
 .fadeInA{
-    animation: 3s fadeinDelay;
+    animation: 1.5s fadeinDelay;
 }
 .fadeInB{
-    animation: 4s fadeinDelay;
+    animation: 2.5s fadeinDelay;
 }
 .fadeInC{
-    animation: 5s fadeinDelay;
+    animation: 3.5s fadeinDelay;
 }
 /* opacity 불투명도 */
 @keyframes fadein {
@@ -187,16 +187,10 @@ button[disabled]{
 /* Main styles */
 
 
-#footer {
-    padding: 2em 0 1em 0;
-    background: #ffffff;
-    }
-    
-    #footer .copyright {
+
+    #footer {
       color: #000000;
       font-size: 0.9em;
-      margin: 0 0 2em 0;
-      padding: 0 1em;
       text-align: center;
     }
 
