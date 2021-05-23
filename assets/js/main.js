@@ -132,12 +132,12 @@ function next() {
         // $("#B").html(content[num]["B"]);
         // $("#C").html(content[num]["C"]);
         // } else{
-        setTimeout(function(){ 
+        // setTimeout(function(){ 
         $("#A").html(content[num]["A"]);
         $("#B").html(content[num]["B"]);
         $("#C").html(content[num]["C"]);
         num = num + 1;
-    },500);
+    // },500);
 
         // }
       
