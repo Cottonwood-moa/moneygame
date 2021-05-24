@@ -139,7 +139,7 @@ button[disabled]{
     font-weight: bold;
 }
 #explain{
-    animation: fadeinDelay 2.5s;
+  animation: fadeinDelay 2.5s;
 }
 #yourResult{
   animation: fadeinDelay 1.5s;
@@ -147,7 +147,7 @@ button[disabled]{
 
 #participant{
   font-weight: bold;
-    animation: fadeinDelay 2s;
+  animation: fadeinDelay 2s;
 }
 #restart{
     animation: fadeinDelay 3s;
