@@ -78,7 +78,7 @@ let result = {
 
 function next() {
 
-    if (num === 2) {
+    if (num === 20) {
         $(".question").hide();
         $(".result").show();
         var info = [
@@ -137,9 +137,12 @@ function next() {
     }
 }
 
+function refreshPage(){
+    window.location.reload();
 
+}
 // css restart
-$("button").click(function (e) {
+$(".removeClass").click(function (e) {
     $("#title").removeClass("fadeIn");
     setTimeout(function () {
         $("#title").addClass("fadeIn");
@@ -171,7 +174,3 @@ $("button").click(function (e) {
     }, 0);
 });
 
-function refreshPage(){
-    window.location.reload();
-
-}
