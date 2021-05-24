@@ -48,12 +48,6 @@ article{
 .result{
     display: none;
 }
-#img{ 
-    animation: fadeinDelay 1s;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
 #barChart{
     display: none;
 }
@@ -138,21 +132,48 @@ button[disabled]{
 #id{
     font-weight: bold;
 }
-#explain{
-  animation: fadeinDelay 2.5s;
-}
+/* 결과 페이지 */
 #yourResult{
   animation: fadeinDelay 1.5s;
 }
-
+#img{ 
+  animation: fadeinDelay 1s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+#img2{ 
+animation: fadeinDelay 1.2s;
+width: 100px;
+height: 100px;
+margin: 0 auto;
+}
 #participant{
   font-weight: bold;
   animation: fadeinDelay 2s;
 }
+.plus{
+  animation: fadeinDelay 2.1s;
+}
+#participant2{
+  font-weight: bold;
+  animation: fadeinDelay 2.2s;
+}
+#explain{
+  animation: fadeinDelay 2.5s;
+}
+#explain2{
+  animation: fadeinDelay 2.7s;
+}
+
+
 #restart{
     animation: fadeinDelay 3s;
 }
 
+.second{
+  display: none;
+}
 /* Cool infinite background scrolling animation.
  * Twitter: @kootoopas
  */
