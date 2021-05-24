@@ -78,7 +78,7 @@ let result = {
 
 function next() {
 
-    if (num === 20) {
+    if (num === 2) {
         $(".question").hide();
         $(".result").show();
         var info = [
