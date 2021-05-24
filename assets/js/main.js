@@ -140,7 +140,7 @@ function next() {
 
     } else {
         $('.disable').attr("disabled", true);
-        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 3000);
+        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 1500);
         $(".progress-bar").attr('style', 'width: calc(100/20*' + num + '%)');
         $("#title").html(content[num]["title"]);
         $("#typeA").val(content[num]["typeA"]);

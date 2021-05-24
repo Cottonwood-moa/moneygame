@@ -53,23 +53,23 @@ article{
 }
 
 .fadeIn {
-    animation: fadein 1s;
+    animation: fadein 0.2s;
 }
 
 .fadeInA{
-    animation: 1.0s fadeinDelay;
+    animation: 0.5s fadeinDelay;
 }
 .fadeInB{
-    animation: 2.0s fadeinDelay;
+    animation: 1.0s fadeinDelay;
 }
 .fadeInC{
-    animation: 3.0s fadeinDelay;
+    animation: 1.5s fadeinDelay;
 }
 .fadeInD{
-  animation: 4.0s fadeinDelay;
+  animation: 2.0s fadeinDelay;
 }
 .fadeInE{
-  animation: 5.0s fadeinDelay;
+  animation: 2.5s fadeinDelay;
 }
 /* opacity 불투명도 */
 @keyframes fadein {
