@@ -65,7 +65,7 @@ let content = {
 
 let result = {
     "elec": { "participant": "논리왕 전기", "explain": '"재밌었어, 인정?"', "img": "/assets/img/elec.png" }, //5
-    "pie": { "participant": "파이", "explain": '"존나 노잼 오케이"', "img": "/assets/img/pie.webp" }, //6
+    "pie": { "participant": "파이", "explain": '"존X 노잼 오케이"', "img": "/assets/img/pie.webp" }, //6
     "gong": { "participant": "공혁준", "explain": '"재밌긴 했어.<br> 우리 없었으면 개씹노잼일거야."', "img": "/assets/img/gong.png" },//6
     "e": { "participant": "이루리", "explain": '"우리를 위해 뭘 하셨냐고요."', "img": "/assets/img/e.jpg" },//6
     "cow": { "participant": "가오가이", "explain": '"누군가를 믿잖아? 끝까지 믿어야 돼. 근데 누군가를 의심하잖아? 끝까지 의심해야 돼."', "img": "/assets/img/cow.jpg" },//7
