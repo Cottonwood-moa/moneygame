@@ -32,6 +32,8 @@ $("#D").click(function () {
     next();
 });
 
+
+
 let num = 1;
 // 객체 "" 안의 값은 id 값
 let content = {
@@ -118,33 +120,24 @@ function next() {
         }
 
     } else {
-        setTimeout(function(){console.log("timedelay")},3000);
         $('.disable').attr("disabled", true);
-        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 3500);
+        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 3000);
         $(".progress-bar").attr('style', 'width: calc(100/20*' + num + '%)');
         $("#title").html(content[num]["title"]);
         $("#typeA").val(content[num]["typeA"]);
         $("#typeB").val(content[num]["typeB"]);
         $("#typeC").val(content[num]["typeC"]);
-        //질문지 변경
-        // if(num===1){ 
-        // $("#A").html(content[num]["A"]);
-        // $("#B").html(content[num]["B"]);
-        // $("#C").html(content[num]["C"]);
-        // } else{
-        // setTimeout(function(){ 
+    //질문지 변경
+        setTimeout(function(){ 
         $("#A").html(content[num]["A"]);
         $("#B").html(content[num]["B"]);
         $("#C").html(content[num]["C"]);
         num = num + 1;
-    // },500);
-
-        // }
-      
-    
+    },500);
     }
-
 }
+
+
 // css restart
 $("button").click(function (e) {
     $("#title").removeClass("fadeIn");
@@ -171,27 +164,14 @@ $("button").click(function (e) {
     setTimeout(function () {
         $("#D").addClass("fadeInD");
     }, 0);
+
+    $("#backToMain").removeClass("fadeInE");
+    setTimeout(function () {
+        $("#backToMain").addClass("fadeInE");
+    }, 0);
 });
 
 function refreshPage(){
     window.location.reload();
 
 }
-// function capture(){
-//     html2canvas(document.querySelector('img'), {}).then(function (canvas) {
-//         saveAs(canvas.toDataURL(), 'moneygame.png');
-//     });    
-// }
-
-// function saveAs(uri, filename) {
-// 	var link = document.createElement('a');
-// 	if (typeof link.download === 'string') {
-// 		link.href = uri;
-// 		link.download = filename;
-// 		document.body.appendChild(link);
-// 		link.click();
-// 		document.body.removeChild(link);
-// 	} else {
-// 		window.open(uri);
-// 	}
-// }

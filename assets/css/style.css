@@ -74,6 +74,9 @@ article{
 .fadeInD{
   animation: 4.0s fadeinDelay;
 }
+.fadeInE{
+  animation: 5.0s fadeinDelay;
+}
 /* opacity 불투명도 */
 @keyframes fadein {
     from {
@@ -119,6 +122,11 @@ button[disabled]{
     font-size: 25px;
     width: 100px;
     margin: 0 auto; 
+}
+#backToMain{
+  font-size: 25px;
+  width: 100px;
+  margin: 0 auto; 
 }
 
 .progress-bar{
