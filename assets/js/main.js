@@ -3,6 +3,9 @@ function start() {
     $(".question").show();
     next();
 }
+function refreshPage(){
+    window.location.reload();
+}
 // 윗버튼
 $("#A").click(function () {
     let typeA = $("#typeA").val();
@@ -137,10 +140,6 @@ function next() {
     }
 }
 
-function refreshPage(){
-    window.location.reload();
-
-}
 // css restart
 $(".removeClass").click(function (e) {
     $("#title").removeClass("fadeIn");
