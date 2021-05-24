@@ -152,7 +152,7 @@ function next() {
         $("#B").html(content[num]["B"]);
         $("#C").html(content[num]["C"]);
         num = num + 1;
-    },500);
+    },100);
     }
 }
 
