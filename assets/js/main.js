@@ -81,7 +81,7 @@ let result = {
 
 function next() {
 
-    if (num === 20) {
+    if (num === 2) {
         $(".question").hide();
         $(".result").show();
         var info = [
@@ -158,6 +158,11 @@ function next() {
 
 // css restart
 $(".removeClass").click(function (e) {
+    $("#backToMain").removeClass("fadeInE");
+    setTimeout(function () {
+        $("#backToMain").addClass("fadeInE");
+    }, 0);
+
     $("#title").removeClass("fadeIn");
     setTimeout(function () {
         $("#title").addClass("fadeIn");
@@ -181,11 +186,6 @@ $(".removeClass").click(function (e) {
     $("#D").removeClass("fadeInD");
     setTimeout(function () {
         $("#D").addClass("fadeInD");
-    }, 0);
-
-    $("#backToMain").removeClass("fadeInE");
-    setTimeout(function () {
-        $("#backToMain").addClass("fadeInE");
     }, 0);
 });
 
