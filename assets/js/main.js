@@ -3,7 +3,7 @@ function start() {
     $(".question").show();
     next();
 }
-function refreshPage(){
+function refreshPage() {
     window.location.reload();
 }
 // 윗버튼
@@ -12,16 +12,14 @@ $("#A").click(function () {
     const preValue = $("#" + typeA).val();
     $("#" + typeA).val(parseInt(preValue) + 1);
     next();
-}); 
-
+});
 //중간버튼
 $("#B").click(function () {
     let typeB = $("#typeB").val();
     const preValue = $("#" + typeB).val();
     $("#" + typeB).val(parseInt(preValue) + 1);
     next();
-}); 
-
+});
 //아래버튼
 $("#C").click(function () {
     let typeC = $("#typeC").val();
@@ -29,14 +27,10 @@ $("#C").click(function () {
     $("#" + typeC).val(parseInt(preValue) + 1);
     next();
 });
-
 //폴드
 $("#D").click(function () {
     next();
 });
-
-
-
 let num = 1;
 // 객체 "" 안의 값은 id 값
 let content = {
@@ -45,8 +39,8 @@ let content = {
     3: { "title": "상황 3. 내기에서 진 참여자가 배변을 치우고 있다. 당신의 행동은?", "typeA": "elec", "typeB": "ni", "typeC": "park", "A": "신경쓰지 않는다.", "B": "그래도 도와준다.", "C": "도와주는 척 구경한다." },
     4: { "title": "상황 4. 참여자들이 모여서 소주를 마시고 있다. 당신의 행동은?", "typeA": "big", "typeB": "elec", "typeC": "pie", "A": "조용히 방으로 가서 피자를 시켜먹는다.", "B": "안마시고 가만히 앉아있는다.", "C": "러브샷~러브샷~" },
     5: { "title": "상황 5. 참여자 중 한 명이 짜증나는 행동을 한다.  당신의 행동은? ", "typeA": "gong", "typeB": "e", "typeC": "cow", "A": "참았다가 한 번에 터트린다.", "B": "그래도 같은 동료인데 안고간다.", "C": "할말은 해야겠다." },
-    6: { "title": "상황 6. 별로 친하지 않은 참여자가 당신을 포섭하려고 한다. 당신의 행동은?", "typeA": "ni", "typeB": "six", "typeC": "park", "A": "일단 알겠다고 하고 상황을 지켜본다.", "B":"다 같이 고생하는데 니편내편이 어딨나. 거절한다.", "C": "편 나누는건 좋은데 너는 아니다." },
-    7: { "title": "상황 7. 다음 날 아침, 예상금액보다 100만원이 더 차감됐다. 당신의 행동은?", "typeA": "park", "typeB": "six", "typeC": "cow", "A": "(아 뭐 100만원 가지고 난리야~) 누워서 하품을 한다.", "B":"참여자들에게 좀 아껴쓰자고 성질을 낸다.", "C": "사람들에게 지난 밤 지출을 물어보고 계산한다." },
+    6: { "title": "상황 6. 별로 친하지 않은 참여자가 당신을 포섭하려고 한다. 당신의 행동은?", "typeA": "ni", "typeB": "six", "typeC": "park", "A": "일단 알겠다고 하고 상황을 지켜본다.", "B": "다 같이 고생하는데 니편내편이 어딨나. 거절한다.", "C": "편 나누는건 좋은데 너는 아니다." },
+    7: { "title": "상황 7. 다음 날 아침, 예상금액보다 100만원이 더 차감됐다. 당신의 행동은?", "typeA": "park", "typeB": "six", "typeC": "cow", "A": "(아 뭐 100만원 가지고 난리야~) 누워서 하품을 한다.", "B": "참여자들에게 좀 아껴쓰자고 성질을 낸다.", "C": "사람들에게 지난 밤 지출을 물어보고 계산한다." },
     8: { "title": "상황 8. 참여자 몇 명이 방에 들어가서 당신을 못 들어오게 하고 이야기를 하고 있다. 당신의 행동은? ", "typeA": "pie", "typeB": "gong", "typeC": "e", "A": "욕을 하며 성질을 내고 따진다.", "B": "마음에 두고 있다가 크게 터뜨린다.", "C": "내가 무슨 잘못을 했거니 하며 자책한다." },
     9: { "title": "상황 9. 참여자 두 명이 언쟁하다 몸싸움이 붙었다. 당신의 행동은?", "typeA": "cow", "typeB": "tiger", "typeC": "big", "A": "나서서 통제한다.", "B": "방관한다.", "C": "방에 들어가서 피자를 시킨다." },
     10: { "title": "상황 10. 참여자들이 아예 술판을 벌이고 있다. 당신의 행동은?", "typeA": "ni", "typeB": "park", "typeC": "pie", "A": "말은 하지 않고 한심하게 쳐다본다.", "B": "원샷을 못하면 장가를 못가요~", "C": "화투를 사온다." },
@@ -60,9 +54,7 @@ let content = {
     18: { "title": "상황 18. 당신은 당신을 믿고 있는 사람을 떨어뜨려야 하는 상황에 놓여있다. 당신의 행동은?", "typeA": "pie", "typeB": "gong", "typeC": "e", "A": "응~ 잘가~", "B": "그럴바엔 돈 다쓰고 자폭한다.", "C": "차라리 내가 떨어지겠다." },
     19: { "title": "상황 19. 참여자들이 두 파벌로 나뉘어 언쟁을 하다가 분위기가 격양되었다. 당신의 행동은?", "typeA": "cow", "typeB": "six", "typeC": "big", "A": "상황을 진정시키고 문제를 해결하려한다.", "B": "같이 성질부리고 고함지르며 욕설을 내뱉는다.", "C": "방으로 들어가 피자를 시킨다." },
     20: { "title": "상황 20. 당신은 혈투끝에 상금을 거머쥐었는데 팀이었던 사람들이 상금을 좀 나눠달라 한다. 당신의 행동은?", "typeA": "ni", "typeB": "park", "typeC": "six", "A": "사정이 딱한 팀원들에게만 조금 나눠준다.", "B": "응~ 안줘~ 나도 돈 없어~", "C": "그래도 팀이었는데 나눠줘야지." }
-
 }
-
 let result = {
     "elec": { "participant": "논리왕 전기", "explain": '"재밌었어, 인정?"', "img": "/assets/img/elec.png" }, //5
     "pie": { "participant": "파이", "explain": '"존X 노잼 오케이"', "img": "/assets/img/pie.webp" }, //6
@@ -74,13 +66,9 @@ let result = {
     "ni": { "participant": "니갸르", "explain": '"본인이 약하다는 말을 했잖아. 그러면 우리가 그걸 이용하는 거야."', "img": "/assets/img/ni.png" },
     "park": { "participant": "박준형", "explain": '"특 스페셜 모둠 초밥으로 주세요."', "img": "/assets/img/park.jpg" },//7
     "six": { "participant": "육지담", "explain": '"언니 저 무서워요."', "img": "/assets/img/six.jpg" },//8
-    "retry": { "participant": "다시시도", "explain": "혹시 선택지를 막 찍진 않았나요? 답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
-
+    "retry": { "participant": "다시시도", "explain": "혹시 선택지를 아무거나 찍진 않았나요? 답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
 }
-
-
 function next() {
-
     if (num === 20) {
         $(".question").hide();
         $(".result").show();
@@ -102,12 +90,6 @@ function next() {
         info.sort(function (a, b) {
             return b[sortingField] - a[sortingField];
         });
-        console.log(info);
-        console.log(info[0]['value']); var a = info[0]['value'];
-        console.log(info[1]['value']); var b = info[1]['value'];
-        console.log(info[2]['value']); var c = info[2]['value'];
-        console.log(info[3]['value']); var d = info[3]['value'];
-        
         if (a == b && a == c && a == d) {
             console.log('hello');
             const last = info[10]['name'];
@@ -115,10 +97,8 @@ function next() {
             $("#img").attr("src", result[last]["img"]);
             $("#participant").html(result[last]["participant"]);
             $("#explain").html(result[last]["explain"]);
-
-        }else if(a == b){
+        } else if (a == b) {
             $(".second").show();
-            console.log(info[0]['value']);
             const first = info[0]['name'];
             const second = info[1]['name'];
             $("#img").attr("src", result[first]["img"]);
@@ -128,15 +108,12 @@ function next() {
             $("#participant2").html(result[second]["participant"]);
             $("#explain2").html(result[second]["explain"]);
         }
-        
         else {
-            console.log(info[0]['value']);
             const first = info[0]['name'];
             $("#img").attr("src", result[first]["img"]);
             $("#participant").html(result[first]["participant"]);
             $("#explain").html(result[first]["explain"]);
         }
-
     } else {
         $('.disable').attr("disabled", true);
         setTimeout(function () { $('.disable').removeAttr("disabled"); }, 1500);
@@ -145,43 +122,37 @@ function next() {
         $("#typeA").val(content[num]["typeA"]);
         $("#typeB").val(content[num]["typeB"]);
         $("#typeC").val(content[num]["typeC"]);
-    //질문지 변경
-        setTimeout(function(){ 
-        $("#A").html(content[num]["A"]);
-        $("#B").html(content[num]["B"]);
-        $("#C").html(content[num]["C"]);
-        num = num + 1;
-    },100);
+        //질문지 변경
+        setTimeout(function () {
+            $("#A").html(content[num]["A"]);
+            $("#B").html(content[num]["B"]);
+            $("#C").html(content[num]["C"]);
+            num = num + 1;
+        }, 100);
     }
 }
-
 // css restart
 $(".removeClass").click(function (e) {
     $("#backToMain").removeClass("fadeInE");
     setTimeout(function () {
         $("#backToMain").addClass("fadeInE");
     }, 0);
-
     $("#title").removeClass("fadeIn");
     setTimeout(function () {
         $("#title").addClass("fadeIn");
     }, 0);
-
     $("#A").removeClass("fadeInA");
     setTimeout(function () {
         $("#A").addClass("fadeInA");
     }, 0);
-
     $("#B").removeClass("fadeInB");
     setTimeout(function () {
         $("#B").addClass("fadeInB");
     }, 0);
-    
     $("#C").removeClass("fadeInC");
     setTimeout(function () {
         $("#C").addClass("fadeInC");
     }, 0);
-
     $("#D").removeClass("fadeInD");
     setTimeout(function () {
         $("#D").addClass("fadeInD");

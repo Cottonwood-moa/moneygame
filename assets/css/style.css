@@ -22,7 +22,6 @@ body{
     font-weight: 100;
     font-style: normal;
   }
-
   .header {
     z-index: 100000;
     position:fixed;
@@ -35,9 +34,7 @@ body{
     background:#ffffff;
     margin:auto;
     }
-  
 button { border:none; } 
-
 article{
     display: flex;
     flex-direction: column;
@@ -85,7 +82,6 @@ article{
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
 /* all: unset; */
 /* button style */
 button{
@@ -97,14 +93,12 @@ button{
 button:focus {
     outline: none;
   }
-
 button:disabled,
 button[disabled]{
     border: 1px solid rgb(0, 0, 0);
   background-color: white;
   color: black;
 }
-
 .startBtn{
     font-size: 25px;
     width: 100px;
@@ -165,12 +159,9 @@ margin: 0 auto;
 #explain2{
   animation: fadeinDelay 2.7s;
 }
-
-
 #restart{
     animation: fadeinDelay 3s;
 }
-
 .second{
   display: none;
 }
@@ -222,30 +213,23 @@ margin: 0 auto;
   }
 }
 /* Main styles */
-
-
-
     #footer {
       color: #000000;
       font-size: 0.9em;
       text-align: center;
     }
-
     a:link {
         text-decoration: none;
         color: black;
       }
-      
       a:visited {
         text-decoration: none;
         color: black;
       }
-      
       a:hover {
         text-decoration: none;
         color: black;
       }
-      
       a:active {
         text-decoration: none;
         color: black;
