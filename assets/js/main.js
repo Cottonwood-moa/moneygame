@@ -111,6 +111,7 @@ function next() {
         if (a == b && a == c && a == d) {
             console.log('hello');
             const last = info[10]['name'];
+            $("#yourResult").hide();
             $("#img").attr("src", result[last]["img"]);
             $("#participant").html(result[last]["participant"]);
             $("#explain").html(result[last]["explain"]);
