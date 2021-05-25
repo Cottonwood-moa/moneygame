@@ -74,7 +74,7 @@ let result = {
     "ni": { "participant": "니갸르", "explain": '"본인이 약하다는 말을 했잖아. 그러면 우리가 그걸 이용하는 거야."', "img": "/assets/img/ni.png" },
     "park": { "participant": "박준형", "explain": '"특 스페셜 모둠 초밥으로 주세요."', "img": "/assets/img/park.jpg" },//7
     "six": { "participant": "육지담", "explain": '"언니 저 무서워요."', "img": "/assets/img/six.jpg" },//8
-    "retry": { "participant": "다시시도", "explain": "답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
+    "retry": { "participant": "다시시도", "explain": "혹시 선택지를 막 찍진 않았나요? 답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
 
 }
 
@@ -107,9 +107,7 @@ function next() {
         console.log(info[1]['value']); var b = info[1]['value'];
         console.log(info[2]['value']); var c = info[2]['value'];
         console.log(info[3]['value']); var d = info[3]['value'];
-        if(a==b) {
-
-        }
+        
         if (a == b && a == c && a == d) {
             console.log('hello');
             const last = info[10]['name'];
@@ -117,7 +115,7 @@ function next() {
             $("#participant").html(result[last]["participant"]);
             $("#explain").html(result[last]["explain"]);
 
-        } if(a == b){
+        }else if(a == b){
             $(".second").show();
             console.log(info[0]['value']);
             const first = info[0]['name'];
