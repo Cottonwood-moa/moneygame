@@ -4,6 +4,7 @@ function start() {
     next();
 }
 function refreshPage() {
+    $("body").hide();
     window.location.reload();
 }
 // 윗버튼
