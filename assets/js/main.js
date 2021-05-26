@@ -109,7 +109,7 @@ let result = {
     "retry": { "participant": "다시시도", "explain": "혹시 선택지를 아무거나 찍진 않았나요? 답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
 }
 function next() {
-    if (num === 2) {
+    if (num === 21) {
         $(".question").hide();
         $(".result").show();
         var info = [
