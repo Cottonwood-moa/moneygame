@@ -109,7 +109,7 @@ let result = {
     "retry": { "participant": "다시시도", "explain": "혹시 선택지를 아무거나 찍진 않았나요? 답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
 }
 function next() {
-    if (num === 21) {
+    if (num === 4) {
         $(".question").hide();
         $(".result").show();
         var info = [
@@ -126,13 +126,18 @@ function next() {
             { name: $("#retry").attr('id'), value: $("#retry").val() },
         ]
         var sortingField = "value";
+        
+        info.sort(function (a, b) {
+            return b[sortingField] - a[sortingField];
+        });
         var a = info[0]['value'];
         var b = info[1]['value'];
         var c = info[2]['value'];
         var d = info[3]['value'];
-        info.sort(function (a, b) {
-            return b[sortingField] - a[sortingField];
-        });
+        console.log(info[0]['value']);
+        console.log(info[1]['value']);
+        console.log(info[2]['value']);
+        console.log(info[3]['value']);
         if (a == b && a == c && a == d) {
             console.log("helloworld")
             const last = info[10]['name'];
@@ -140,7 +145,8 @@ function next() {
             $("#img").attr("src", result[last]["img"]);
             $("#participant").html(result[last]["participant"]);
             $("#explain").html(result[last]["explain"]);
-        } else if (a == b) {
+        } else if (a === b) {
+            console.log('test');
             $(".second").show();
             const first = info[0]['name'];
             const second = info[1]['name'];
