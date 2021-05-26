@@ -1,0 +1,9 @@
+diff a/assets/js/main.js b/assets/js/main.js	(rejected hunks)
+@@ -107,6 +107,7 @@
+         console.log(info[1]['value']); var b = info[1]['value'];
+         console.log(info[2]['value']); var c = info[2]['value'];
+         console.log(info[3]['value']); var d = info[3]['value'];
++        
+         if (a == b && a == c && a == d) {
+             console.log('hello');
+             const last = info[10]['name'];

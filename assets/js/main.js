@@ -3,15 +3,51 @@ function start() {
     $(".question").show();
     next();
 }
+function backButton(){
+    if(num === 2 ){
+        refreshPage();
+    }
+    num = num -2 ;
+    const latestType =  array.pop(); // 마지막에 점수를 얻은 타입네임.
+    const preValue = $("#" + latestType).val();
+    if(latestType!=null){
+        $("#" + latestType).val(parseInt(preValue) - 1);
+    }
+    $('.disable').attr("disabled", true);
+    setTimeout(function () { $('.disable').removeAttr("disabled"); }, 1500);
+    $(".progress-bar").attr('style', 'width: calc(100/20*' + num + '%)');
+    $("#title").html(content[num]["title"]);
+    $("#typeA").val(content[num]["typeA"]);
+    $("#typeB").val(content[num]["typeB"]);
+    $("#typeC").val(content[num]["typeC"]);
+    //질문지 변경
+    setTimeout(function () {
+        $("#A").html(content[num]["A"]);
+        $("#B").html(content[num]["B"]);
+        $("#C").html(content[num]["C"]);
+        num = num+1;
+    }, 100);
+    console.log($("#elec").val());
+
+}
+
+
+// array.shift(); //배열 첫번째 원소 삭제
+// array.unshift();// 배열 첫번째 원소 추가
+// array.push(); //배열 마지막 원소 추가
+// array.pop();// 배열 마지막 원소 삭제 (값도 반환됨)
+
 function refreshPage() {
     $("body").hide();
     window.location.reload();
 }
 // 윗버튼
+let array =[];
 $("#A").click(function () {
     let typeA = $("#typeA").val();
     const preValue = $("#" + typeA).val();
     $("#" + typeA).val(parseInt(preValue) + 1);
+    array.push(typeA);
     next();
 });
 //중간버튼
@@ -19,6 +55,7 @@ $("#B").click(function () {
     let typeB = $("#typeB").val();
     const preValue = $("#" + typeB).val();
     $("#" + typeB).val(parseInt(preValue) + 1);
+    array.push(typeB);
     next();
 });
 //아래버튼
@@ -26,10 +63,12 @@ $("#C").click(function () {
     let typeC = $("#typeC").val();
     const preValue = $("#" + typeC).val();
     $("#" + typeC).val(parseInt(preValue) + 1);
+    array.push(typeC);
     next();
 });
 //폴드
 $("#D").click(function () {
+    array.push(null);
     next();
 });
 let num = 1;
@@ -70,7 +109,7 @@ let result = {
     "retry": { "participant": "다시시도", "explain": "혹시 선택지를 아무거나 찍진 않았나요? 답변에 일관성이 없다고 판단되었습니다.<br> 다시해보세요!", "img": "/assets/img/retry.jpg" }
 }
 function next() {
-    if (num === 20) {
+    if (num === 2) {
         $(".question").hide();
         $(".result").show();
         var info = [
@@ -85,14 +124,17 @@ function next() {
             { name: $("#park").attr('id'), value: $("#park").val() },
             { name: $("#six").attr('id'), value: $("#six").val() },
             { name: $("#retry").attr('id'), value: $("#retry").val() },
-
         ]
         var sortingField = "value";
+        var a = info[0]['value'];
+        var b = info[1]['value'];
+        var c = info[2]['value'];
+        var d = info[3]['value'];
         info.sort(function (a, b) {
             return b[sortingField] - a[sortingField];
         });
         if (a == b && a == c && a == d) {
-            console.log('hello');
+            console.log("helloworld")
             const last = info[10]['name'];
             $("#yourResult").hide();
             $("#img").attr("src", result[last]["img"]);
@@ -132,6 +174,7 @@ function next() {
         }, 100);
     }
 }
+
 // css restart
 $(".removeClass").click(function (e) {
     $("#backToMain").removeClass("fadeInE");
