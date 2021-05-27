@@ -14,7 +14,7 @@ function backButton(){
         $("#" + latestType).val(parseInt(preValue) - 1);
     }
     $('.disable').attr("disabled", true);
-    setTimeout(function () { $('.disable').removeAttr("disabled"); }, 1500);
+    setTimeout(function () { $('.disable').removeAttr("disabled"); }, 1000);
     $(".progress-bar").attr('style', 'width: calc(100/20*' + num + '%)');
     $("#title").html(content[num]["title"]);
     $("#typeA").val(content[num]["typeA"]);
@@ -165,7 +165,7 @@ function next() {
         }
     } else {
         $('.disable').attr("disabled", true);
-        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 1500);
+        setTimeout(function () { $('.disable').removeAttr("disabled"); }, 1000);
         $(".progress-bar").attr('style', 'width: calc(100/20*' + num + '%)');
         $("#title").html(content[num]["title"]);
         $("#typeA").val(content[num]["typeA"]);
