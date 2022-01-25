@@ -20,7 +20,8 @@ https://play.google.com/store/apps/details?id=com.cottonwood.moneyGameTest
 ## info
 ㅤ  
 ![image](https://user-images.githubusercontent.com/79053495/150984892-184683f5-396f-4611-b481-6604897e6cbe.png)  
-유튜버 진용진의 "머니게임" 참가자들의 MBTI를 바탕으로 제작되었습니다.
+ㅤ  
+유튜버 진용진의 "머니게임" 참가자들의 MBTI를 바탕으로 제작되었습니다.  
 ㅤ  
 ㅤ  
 **어떤 수익도 창출하지 않습니다.**
