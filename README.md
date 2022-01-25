@@ -19,7 +19,7 @@ https://play.google.com/store/apps/details?id=com.cottonwood.moneyGameTest
 ㅤ  
 ## info
 ㅤ  
-[깃허브 저장소](https://github.com/Cottonwood-moa/characterTest)  
+[깃허브 저장소](https://github.com/Cottonwood-moa/moneygame)  
 ㅤ  
 ![image](https://user-images.githubusercontent.com/79053495/150984892-184683f5-396f-4611-b481-6604897e6cbe.png)  
 ㅤ  
