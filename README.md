@@ -19,10 +19,8 @@ https://play.google.com/store/apps/details?id=com.cottonwood.moneyGameTest
 ㅤ  
 ## info
 ㅤ  
+![image](https://user-images.githubusercontent.com/79053495/150984892-184683f5-396f-4611-b481-6604897e6cbe.png)
+유튜버 진용진의 "머니게임" 참가자들의 MBTI를 바탕으로 제작되었습니다.
 ㅤ  
-![20220125212331](https://user-images.githubusercontent.com/79053495/150976449-6a36c901-8ac4-4cc2-b007-899cf3b93be8.png)
 ㅤ  
-ㅤ  
-https://www.youtube.com/c/%EC%A1%B0%EC%BD%94%EB%94%A9JoCoding  
-유튜브 조코딩님 영상 참조.
-ㅤ  
+**어떤 수익도 창출하지 않습니다.**
