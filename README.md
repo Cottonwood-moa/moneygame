@@ -14,7 +14,6 @@ https://play.google.com/store/apps/details?id=com.cottonwood.moneyGameTest
 - CSS
 - Javascript
 - JQuery
-- Google Teachable machine
 ㅤ  
 ㅤ  
 ## info
